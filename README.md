@@ -94,4 +94,5 @@ This section will cover all things related to development for the ARCube compone
 ## Thanks to...
 * [AFrame](aframe.io) for making WebXR projects fun
 * [Jerome Etienne](https://twitter.com/jerome_etienne) for his phenomenal work on [AR.JS](https://github.com/jeromeetienne/AR.js)
-* [Daniel van der Stam](https://www.linkedin.com/in/daniel-van-der-stam-7616a34) from [webxr.nl](https://webxr.nl)for helping out with the initial brainstorming
+* [Detlef La Grand](https://www.linkedin.com/in/detleflagrand/) from [VRmaster.co](https://vrmaster.co) for getting the ball(or cube) rolling
+* [Daniel van der Stam](https://www.linkedin.com/in/daniel-van-der-stam-7616a34) from [webxr.nl](https://webxr.nl) for helping out with the initial brainstorming
