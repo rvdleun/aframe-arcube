@@ -1,8 +1,5 @@
 const scriptLocation = document.currentScript.getAttribute('src').split('?')[0].split('/').slice(0, -1).join('/');
 
-let test;
-
-
 AFRAME.registerSystem('arcube', {
     anchor: null,
     activeMarkers: [],

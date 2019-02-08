@@ -26,6 +26,12 @@ Note: This section presume that the user has experience with AFrame. If this is 
 ```
 This example will get you up and running. Anything placed between `<a-arcube></a-arcube>` will be rendered on the same position as the cube.
 
+### Local installation
+
+Download `aframe-arcube.zip` in the `dist` directory and unzip it in your project directory. Add `aframe-arcube.min.js` to your HTML file. Do not forget to include AR.JS either.
+
+Make sure that the markers directory is in the same location as the javascript file.
+
 ### Component
 
 The `arcube` component will position the entity on the same position as the ARCube.
@@ -35,7 +41,7 @@ The `arcube` component will position the entity on the same position as the ARCu
 | Property         | Description                                                                                                    | Default value |
 | ---------------- | -------------------------------------------------------------------------------------------------------------- | ------------- |
 | enabled          | Whether the component is active. If not, the object will not be visible                                        | true          |
-| scale            | Sets the scale of the the entity. The default setting will ensure that 1-unit object will fully cover the cube | 1.25          |
+| scale            | Sets the scale of the the entity. The default setting will ensure that 1-unit object will fully cover the cube | 1.45          |
 | timeout          | How long the entity will remain visible when all markers are lost in milliseconds                              | 500           |
 
 #### Example
@@ -46,7 +52,7 @@ The `arcube` component will position the entity on the same position as the ARCu
 ```
 
 ### Primitive
-The `a-arcube` primitive is available for an easier way to render a cube. All attributes are automatically mapped to the respective properties.
+The `a-arcube` primitive is available for an easier way to implement arcube. All attributes are automatically mapped to their respective properties.
 
 #### Example
 ```html
