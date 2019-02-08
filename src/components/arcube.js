@@ -1,3 +1,8 @@
+const scriptLocation = document.currentScript.getAttribute('src').split('?')[0].split('/').slice(0, -1).join('/');
+
+let test;
+
+
 AFRAME.registerSystem('arcube', {
     anchor: null,
     activeMarkers: [],
@@ -15,7 +20,7 @@ AFRAME.registerSystem('arcube', {
         container.setAttribute('id', 'ar-cube-markers');
 
         markers.forEach((marker) => {
-            container.innerHTML+=`<a-marker type="pattern" url="/markers/pattern-marker-${marker.id}.patt">` +
+            container.innerHTML+=`<a-marker type="pattern" url="${scriptLocation}/markers/pattern-marker-${marker.id}.patt">` +
             `    <a-entity class="anchor" position="0 -.5 0" rotation="${marker.rotation}"></a-entity>` +
             '  </a-marker>'
         });
