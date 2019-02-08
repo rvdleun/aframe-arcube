@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<script src="https://jeromeetienne.github.io/AR.js/aframe/examples/vendor/aframe/build/aframe.min.js"></script>
+<script src="vendor/aframe-orbit-controls.min.js"></script>
+<body>
+<a-scene>
+    <a-entity orbit-controls="enabled: true; target: #cube; autoVRLookCam: false;              dampingFactor: 0.125;
+              rotateSpeed:1;
+              minDistance: 2
+" position="0 0 0">
+        <a-entity camera position="0 0 0"></a-entity>
+    </a-entity>
+    <a-entity id="cube">
+        <a-entity rotation="-90 0 0">
+            <a-plane position="0 0 .5" src="assets/marker-a.png" shader="flat"></a-plane>
+            <a-plane position="-.5 0 0" rotation="0 -90 270" src="assets/marker-e.png" shader="flat"></a-plane>
+            <a-plane position=".5 0 0" rotation="0 90 90" src="assets/marker-u.png" shader="flat"></a-plane>
+            <a-plane position="0 -.5 0" rotation="90 0 0" src="assets/marker-c.png" shader="flat"></a-plane>
+            <a-plane position="0 .5 0" rotation="-90 180 0" src="assets/marker-b.png" shader="flat"></a-plane>
+            <a-plane position="0 0 -.5" rotation="180 0 180" src="assets/marker-r.png" shader="flat"></a-plane>
+        </a-entity>
+    </a-entity>
+    <a-sky color="gray"></a-sky>
+</a-scene>
+</body>

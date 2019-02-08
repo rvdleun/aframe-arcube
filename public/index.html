@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+  <script src="./vendor/aframe.min.js"></script>
+  <script src="./vendor/aframe-ar.js"></script>
+  <script src="./main.js"></script>
+  <script>THREEx.ArToolkitContext.baseURL = './arjs/data/'</script>
+
+  <body>
+    <a-scene embedded arjs='debugUIEnabled: false; sourceType: webcam; detectionMode: mono;'>
+      <a-arcube>
+        <a-box color="#4CC3D9"></a-box>
+      </a-arcube>
+
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
