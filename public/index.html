@@ -1,16 +1,17 @@
-<!DOCTYPE html>
-  <script src="./vendor/aframe.min.js"></script>
-  <script src="./vendor/aframe-ar.js"></script>
-  <script src="./aframe-arcube.min.js"></script>
-  <script>THREEx.ArToolkitContext.baseURL = './arjs/data/'</script>
-
-  <body>
-    <a-scene embedded arjs='debugUIEnabled: false; sourceType: webcam; detectionMode: mono;'>
-      <a-arcube>
-        <a-box color="#4CC3D9"></a-box>
-      </a-arcube>
-
-      <a-entity camera></a-entity>
-    </a-scene>
-  </body>
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"> </script>
+<script src="https://cdn.jsdelivr.net/gh/rvdleun/aframe-arcube/dist/aframe-arcube.min.js"></script>
+<script>
+  THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'
+</script>
+<body>
+<a-scene embedded arjs='debugUIEnabled: false; sourceType: webcam; detectionMode: mono;'>
+  <a-arcube>
+    <a-box color="red"></a-box>
+  </a-arcube>
+  <a-entity camera></a-entity>
+</a-scene>
+</body>
 </html>

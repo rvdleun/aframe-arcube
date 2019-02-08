@@ -1,4 +1,7 @@
 # ARCube
+
+![ARCube template](https://raw.githubusercontent.com/rvdleun/aframe-arcube/master/ARCube-template.png?token=ADO5IT01LxcfbTdy8r-72UddbsEAW1Wxks5cXcAuwA%3D%3D)
+
 This repository will help you get setup with the ARCube, an open-source platform to hold objects in the palm of your hand, using Augmented Reality.
 
 ## Instructions
@@ -10,7 +13,7 @@ Note: This section presume that the user has experience with AFrame. If this is 
 <html>
 <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"> </script>
-<script src="./main.js"></script>
+<script src="https://raw.githubusercontent.com/rvdleun/aframe-arcube/master/dist/aframe-arcube.min.js?token=ADO5IUetiLeDdshz1UgUvmkNcGQXw6Ohks5cXcDHwA%3D%3D"></script>
 <script>
     THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'
 </script>
