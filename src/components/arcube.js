@@ -109,8 +109,8 @@ AFRAME.registerComponent('arcube', {
         }
 
         const anchor3D = this.system.anchor.object3D;
-        this.el.object3D.position.copy(anchor3D.getWorldPosition());
-        this.el.object3D.rotation.copy(anchor3D.getWorldRotation());
+        anchor3D.getWorldPosition(this.el.object3D.position);
+        anchor3D.getWorldQuaternion(this.el.object3D.quaternion);
         this.el.object3D.visible = true;
         this.turnInvisibleAfter = time + this.data.timeout;
     }

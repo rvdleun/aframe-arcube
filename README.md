@@ -11,9 +11,9 @@ Note: This section presume that the user has experience with AFrame. If this is 
 ```html
 <!doctype HTML>
 <html>
-<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+<script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"> </script>
-<script src="https://cdn.jsdelivr.net/gh/rvdleun/aframe-arcube/dist/aframe-arcube.min.js"></script>
+<script src="https://rvdleun.github.io/aframe-arcube/dist/aframe-arcube.min.js"></script>
 <script>
     THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'
 </script>
@@ -28,6 +28,8 @@ Note: This section presume that the user has experience with AFrame. If this is 
 </html>
 ```
 This example will get you up and running. Anything placed between `<a-arcube></a-arcube>` will be rendered on the same position as the cube.
+
+Note: When using this example, the loading of the markers may get blocked due to an ad blocker. You may need to turn it off. Host the files locally to avoid this issue.
 
 ### Local installation
 
