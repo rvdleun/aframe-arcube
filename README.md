@@ -2,7 +2,7 @@
 
 ![ARCube template](https://raw.githubusercontent.com/rvdleun/aframe-arcube/master/ARCube-template.png?token=ADO5IT01LxcfbTdy8r-72UddbsEAW1Wxks5cXcAuwA%3D%3D)
 
-This repository will help you get setup with the ARCube, an open-source platform to hold objects in the palm of your hand, using Augmented Reality.
+This repository will help you get setup with the ARCube, an open-source project to hold objects in the palm of your hand, using Augmented Reality.
 
 ## Instructions
 Note: This section presume that the user has experience with AFrame. If this is not the case, then please follow the tutorials at [AFrame school](https://aframe.io/aframe-school/).
@@ -11,25 +11,27 @@ Note: This section presume that the user has experience with AFrame. If this is 
 ```html
 <!doctype HTML>
 <html>
-<script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"> </script>
-<script src="https://rvdleun.github.io/aframe-arcube/dist/aframe-arcube.min.js"></script>
-<script>
-    THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'
-</script>
-<body>
-    <a-scene embedded arjs='debugUIEnabled: false; sourceType: webcam; detectionMode: mono;'>
+  <head>
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"> </script>
+    <script src="https://rvdleun.github.io/aframe-arcube/dist/aframe-arcube.min.js"></script>
+    <script>
+      THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'
+    </script>
+  </head>
+  <body>
+    <a-scene embedded arjs='debugUIEnabled: false; sourceType: webcam; detectionMode: mono;' vr-mode-ui="enabled: false">
         <a-arcube>
             <a-box color="red"></a-box>
         </a-arcube>
         <a-entity camera></a-entity>
     </a-scene>
-</body>
+  </body>
 </html>
 ```
 This example will get you up and running. Anything placed between `<a-arcube></a-arcube>` will be rendered on the same position as the cube.
 
-Note: When using this example, the loading of the markers may get blocked due to an ad blocker. You may need to turn it off. Host the files locally to avoid this issue.
+Note: When using this example, the markers may not download due to an ad blocker. You may need to turn it off. Host the files locally to avoid this issue.
 
 ### Local installation
 
@@ -89,7 +91,9 @@ This section will cover all things related to development for the ARCube compone
 
 ### Roadmap
 * Events
-* Animate to new anchor after timeout
+* Setup local SSL proxy for testing on mobile
+* Fix adblocker issue
+* Animate movement to avoid jittery look
 * Allow custom markers for custom cubes
 * Support for multiple arcubes.
 
