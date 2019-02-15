@@ -55,7 +55,7 @@ The `arcube` component will position the entity on the same position as the ARCu
 ```html
 <a-entity ar-cube="scale: 2; timeout: 2000">
   <a-sphere src="#earth"></a-sphere>
-</a-arcube>
+</a-entity>
 ```
 
 ### Primitive
