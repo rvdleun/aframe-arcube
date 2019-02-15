@@ -110,7 +110,7 @@ This section will cover all things related to development for the ARCube compone
 ## Links
 * [arcu.be]()
 * [Examples](https://arcube-examples.netlify.com/) ([Repository](https://github.com/rvdleun/aframe-arcube-examples))
-* [Virtual ARCube]([online](https://arcube-examples.netlify.com/cube/cube.html))
+* [Virtual ARCube](https://arcube-examples.netlify.com/cube/cube.html)
 
 ## Thanks to...
 * [AFrame](aframe.io) for making WebXR projects fun
