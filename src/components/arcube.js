@@ -7,7 +7,7 @@ AFRAME.registerSystem('arcube', {
     init: function() {
         const markers = [
             { id: 'a', rotation: '0 0 0' },
-            { id: 'r', rotation: '0 0 180' },
+            { id: 'r', rotation: '0 180 180' },
             { id: 'c', rotation: '270 0 0' },
             { id: 'u', rotation: '0 270 90' },
             { id: 'b', rotation: '90 180 0' },

@@ -9,7 +9,14 @@
 <body>
 <a-scene embedded arjs='debugUIEnabled: false; sourceType: webcam; detectionMode: mono;'>
   <a-arcube>
-    <a-box color="red"></a-box>
+    <a-entity rotation="-90 0 0">
+      <a-plane position="0 0 .5" src="assets/marker-a.png" shader="flat"></a-plane>
+      <a-plane position="-.5 0 0" rotation="0 -90 270" src="assets/marker-e.png" shader="flat"></a-plane>
+      <a-plane position=".5 0 0" rotation="0 90 90" src="assets/marker-u.png" shader="flat"></a-plane>
+      <a-plane position="0 -.5 0" rotation="90 0 0" src="assets/marker-c.png" shader="flat"></a-plane>
+      <a-plane position="0 .5 0" rotation="-90 180 0" src="assets/marker-b.png" shader="flat"></a-plane>
+      <a-plane position="0 0 -.5" rotation="180 0 0" src="assets/marker-r.png" shader="flat"></a-plane>
+    </a-entity>
   </a-arcube>
   <a-entity camera></a-entity>
 </a-scene>
