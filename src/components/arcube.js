@@ -62,10 +62,14 @@ AFRAME.registerComponent('arcube', {
     markerFound: null,
     markerLost: null,
 
+    previewEntity: null,
+
     turnInvisibleAfter: 0,
 
     schema: {
         enabled: { type: 'boolean', default: true },
+        preview: { type: 'boolean', default: false },
+        previewPosition: { type: 'vec3', default: '0 0 -5' },
         scale: { type: 'number', default: 1.45 },
         timeout: { type: 'number', default: 500 },
     },
@@ -89,6 +93,21 @@ AFRAME.registerComponent('arcube', {
             marker.addEventListener('markerFound', this.markerFound);
             marker.addEventListener('markerLost', this.markerLost);
         });
+    },
+
+    update: function() {
+        if (this.previewEntity) {
+            this.previewEntity.parentElement.removeChild(this.previewEntity);
+        }
+
+        if (this.data.preview) {
+            const previewEntity = document.createElement('a-entity');
+            previewEntity.setAttribute('position', this.data.previewPosition);
+            previewEntity.innerHTML = this.el.innerHTML;
+
+            this.el.sceneEl.camera.el.appendChild(previewEntity);
+            this.previewEntity = previewEntity;
+        }
     },
 
     remove: function() {
@@ -123,6 +142,8 @@ AFRAME.registerPrimitive('a-arcube', {
 
     mappings: {
         enabled: 'arcube.enabled',
+        preview: 'arcube.preview',
+        previewPosition: 'arcube.previewPosition',
         scale: 'arcube.scale',
         timeout: 'arcube.timeout',
     },

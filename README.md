@@ -45,11 +45,13 @@ The `arcube` component will position the entity on the same position as the ARCu
 
 #### Properties
 
-| Property         | Description                                                                                                    | Default value |
-| ---------------- | -------------------------------------------------------------------------------------------------------------- | ------------- |
-| enabled          | Whether the component is active. If not, the object will not be visible                                        | true          |
-| scale            | Sets the scale of the the entity. The default setting will ensure that 1-unit object will fully cover the cube | 1.45          |
-| timeout          | How long the entity will remain visible when all markers are lost in milliseconds                              | 500           |
+| Property         | Description                                                                                                                                                                           | Default value |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| enabled          | Whether the component is active. If not, the object will not be visible                                                                                                               | true          |
+| preview          | Will create a preview object of the arcube contents and place it in the world. Will make it more convienent to see what your object will look like without needing a physical ARCube. | false         |
+| previewPosition  | Where the preview entity will be placed as a child of the active camera.                                                                                                              | 0 0 -5        |
+| scale            | Sets the scale of the the entity. The default setting will ensure that 1-unit object will fully cover the cube                                                                        | 1.45          |
+| timeout          | How long the entity will remain visible when all markers are lost in milliseconds                                                                                                     | 500           |
 
 #### Example
 ```html
