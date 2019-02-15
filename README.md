@@ -33,17 +33,25 @@ This example will get you up and running. Anything placed between `<a-arcube></a
 
 Note: When using this example, the markers may not download due to an ad blocker. You may need to turn it off. Host the files locally to avoid this issue.
 
+### Preview mode
+To avoid having to hold the ARCube in front of the camera every time you make a change, a preview mode was added. By setting `preview` to `true`, the object that you're creating will be displayed in front of the camera.
+
+### Virtual ARCube
+To help with development(and to avoid having a physical cube on you at all time), the `cube.html` in the public directory will display a virtual ARCube that you can use to test your project. It's recommended that you load your project on a mobile and the virtual cube on a monitor.
+
+The cube is also available [online](https://arcube-examples.netlify.com/cube/cube.html).
+
 ### Local installation
 
 Download `aframe-arcube.zip` in the `dist` directory and unzip it in your project directory. Add `aframe-arcube.min.js` to your HTML file. Do not forget to include AR.JS either.
 
 Make sure that the markers directory is in the same location as the javascript file.
 
-### Component
+## Component
 
 The `arcube` component will position the entity on the same position as the ARCube.
 
-#### Properties
+### Properties
 
 | Property         | Description                                                                                                                                                                           | Default value |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
@@ -53,17 +61,17 @@ The `arcube` component will position the entity on the same position as the ARCu
 | scale            | Sets the scale of the the entity. The default setting will ensure that 1-unit object will fully cover the cube                                                                        | 1.45          |
 | timeout          | How long the entity will remain visible when all markers are lost in milliseconds                                                                                                     | 500           |
 
-#### Example
+### Example
 ```html
 <a-entity ar-cube="scale: 2; timeout: 2000">
   <a-sphere src="#earth"></a-sphere>
 </a-entity>
 ```
 
-### Primitive
+## Primitive
 The `a-arcube` primitive is available for an easier way to implement arcube. All attributes are automatically mapped to their respective properties.
 
-#### Example
+### Example
 ```html
 <a-arcube enabled="false" scale="1.5" timeout="0">
   <a-obj-model src="#star-destroyer-obj" mtl="#star-destroyer-mtl"></a-obj-model>
@@ -98,6 +106,11 @@ This section will cover all things related to development for the ARCube compone
 * Animate movement to avoid jittery look
 * Allow custom markers for custom cubes
 * Support for multiple arcubes.
+
+## Links
+* [arcu.be]()
+* [Examples](https://arcube-examples.netlify.com/) ([Repository](https://github.com/rvdleun/aframe-arcube-examples))
+* [Virtual ARCube]([online](https://arcube-examples.netlify.com/cube/cube.html))
 
 ## Thanks to...
 * [AFrame](aframe.io) for making WebXR projects fun
