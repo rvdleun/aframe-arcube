@@ -1,7 +1,7 @@
 {
   "name": "aframe-trl-starter-kit",
   "description": "ARCube",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "scripts": {
     "build": "rm -rf dist && mkdir dist && ln -s ../public/markers dist/markers && ./node_modules/.bin/webpack-cli --entry ./src/index.js --output dist/aframe-arcube.min.js && zip -r dist/aframe-arcube.zip dist/",
